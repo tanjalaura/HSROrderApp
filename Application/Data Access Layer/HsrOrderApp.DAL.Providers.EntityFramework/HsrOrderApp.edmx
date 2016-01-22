@@ -286,6 +286,7 @@
             <End Role="Roles" EntitySet="RoleSet" />
             <End Role="Users" EntitySet="UserSet" />
           </AssociationSet>
+          <EntitySet Name="Suppliers" EntityType="HsrOrderAppModel.Supplier" />
         </EntityContainer>
         <EntityType Name="Address">
           <Key>
@@ -400,6 +401,12 @@
           <End Role="Roles" Type="HsrOrderAppModel.Role" Multiplicity="*" />
           <End Role="Users" Type="HsrOrderAppModel.User" Multiplicity="*" />
         </Association>
+        <EntityType Name="Supplier">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -555,7 +562,7 @@
         <EntityTypeShape EntityType="HsrOrderAppModel.Customer" Width="1.5" PointX="3" PointY="3.5" Height="2.3648893229166674" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.OrderDetail" Width="1.5" PointX="7.5" PointY="6.5" Height="2.1725878906249987" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.Order" Width="1.5" PointX="5.25" PointY="6.375" Height="2.3648893229166656" IsExpanded="true" />
-        <EntityTypeShape EntityType="HsrOrderAppModel.Product" Width="1.5" PointX="5.25" PointY="14.125" Height="2.9417936197916656" IsExpanded="true" />
+        <EntityTypeShape EntityType="HsrOrderAppModel.Product" Width="1.5" PointX="5.5" PointY="9.625" Height="2.9417936197916656" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.Role" Width="1.5" PointX="3" PointY="0.75" Height="1.787985026041667" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.User" Width="1.5" PointX="5.25" PointY="2.5" Height="2.172587890625" IsExpanded="true" />
         <AssociationConnector Association="HsrOrderAppModel.FK_Orders_Customers" ManuallyRouted="false">
@@ -579,6 +586,7 @@
         <AssociationConnector Association="HsrOrderAppModel.UserInRoles" ManuallyRouted="false">
           <ConnectorPoint PointX="4.5" PointY="1.6249995" />
           <ConnectorPoint PointX="6" PointY="1.6249995" />
-          <ConnectorPoint PointX="6" PointY="2.5" /></AssociationConnector></Diagram></edmx:Diagrams>
+          <ConnectorPoint PointX="6" PointY="2.5" /></AssociationConnector>
+        <EntityTypeShape EntityType="HsrOrderAppModel.Supplier" Width="1.5" PointX="8.125" PointY="3.875" /></Diagram></edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

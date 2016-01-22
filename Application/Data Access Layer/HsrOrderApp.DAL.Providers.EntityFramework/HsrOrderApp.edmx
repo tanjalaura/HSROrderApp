@@ -286,7 +286,6 @@
             <End Role="Roles" EntitySet="RoleSet" />
             <End Role="Users" EntitySet="UserSet" />
           </AssociationSet>
-          <EntitySet Name="Suppliers" EntityType="HsrOrderAppModel.Supplier" />
         </EntityContainer>
         <EntityType Name="Address">
           <Key>
@@ -401,12 +400,6 @@
           <End Role="Roles" Type="HsrOrderAppModel.Role" Multiplicity="*" />
           <End Role="Users" Type="HsrOrderAppModel.User" Multiplicity="*" />
         </Association>
-        <EntityType Name="Supplier">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
-        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -587,6 +580,6 @@
           <ConnectorPoint PointX="4.5" PointY="1.6249995" />
           <ConnectorPoint PointX="6" PointY="1.6249995" />
           <ConnectorPoint PointX="6" PointY="2.5" /></AssociationConnector>
-        <EntityTypeShape EntityType="HsrOrderAppModel.Supplier" Width="1.5" PointX="8.125" PointY="3.875" /></Diagram></edmx:Diagrams>
+        </Diagram></edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

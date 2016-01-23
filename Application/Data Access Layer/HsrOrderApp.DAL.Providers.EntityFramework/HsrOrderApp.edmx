@@ -786,7 +786,7 @@
         <EntityTypeShape EntityType="HsrOrderAppModel.Customer" Width="1.5" PointX="3" PointY="3.5" Height="2.3648893229166674" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.OrderDetail" Width="1.5" PointX="7.5" PointY="6.5" Height="2.1725878906249987" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.Order" Width="1.5" PointX="3.625" PointY="6.875" Height="2.3648893229166656" IsExpanded="true" />
-        <EntityTypeShape EntityType="HsrOrderAppModel.Product" Width="1.5" PointX="7" PointY="9.125" Height="2.9417936197916656" IsExpanded="true" />
+        <EntityTypeShape EntityType="HsrOrderAppModel.Product" Width="1.5" PointX="8.25" PointY="10.375" Height="2.9417936197916656" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.Role" Width="1.5" PointX="3" PointY="1.125" Height="1.787985026041667" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.User" Width="1.5" PointX="5.25" PointY="2.5" Height="2.172587890625" IsExpanded="true" />
         <AssociationConnector Association="HsrOrderAppModel.FK_Orders_Customers" ManuallyRouted="false">
@@ -811,8 +811,8 @@
           <ConnectorPoint PointX="4.5" PointY="1.6249995" />
           <ConnectorPoint PointX="6" PointY="1.6249995" />
           <ConnectorPoint PointX="6" PointY="2.5" /></AssociationConnector>
-        <EntityTypeShape EntityType="HsrOrderAppModel.SupplierConditions" Width="1.5" PointX="10.25" PointY="9.375" />
-        <EntityTypeShape EntityType="HsrOrderAppModel.Suppliers" Width="1.5" PointX="1" PointY="9.875" />
+        <EntityTypeShape EntityType="HsrOrderAppModel.SupplierConditions" Width="1.5" PointX="4.5" PointY="10" />
+        <EntityTypeShape EntityType="HsrOrderAppModel.Suppliers" Width="1.5" PointX="0.75" PointY="10.375" />
         <AssociationConnector Association="HsrOrderAppModel.FK_ProductSupplier_Products" />
         <AssociationConnector Association="HsrOrderAppModel.FK_ProductSupplier_Supplier" />
         <AssociationConnector Association="HsrOrderAppModel.SupplierAddresses" />

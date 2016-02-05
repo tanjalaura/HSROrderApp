@@ -166,6 +166,9 @@
     <Compile Include="Views\AddressDetail.xaml.cs">
       <DependentUpon>AddressDetail.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ConditionDetail.xaml.cs">
+      <DependentUpon>ConditionDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RoleDetail.xaml.cs">
       <DependentUpon>RoleDetail.xaml</DependentUpon>
     </Compile>
@@ -247,6 +250,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ConditionDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\RoleDetail.xaml">
       <Generator>MSBuild:Compile</Generator>

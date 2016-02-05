@@ -17,9 +17,11 @@
         <ListView x:Name="listView1" ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="{x:Static props:Strings.SupplierView_Name}"  Width="200" DisplayMemberBinding="{Binding FullName}"/>
-                    <GridViewColumn Header="{x:Static props:Strings.SupplierView_OpenOrders}"  Width="150" DisplayMemberBinding="{Binding NumberOfOpenOrders}"/>
-                    <GridViewColumn Header="{x:Static props:Strings.SupplierView_TotalOrders}"  Width="150" DisplayMemberBinding="{Binding NumberOfTotalOrders}"/>
+                    <GridViewColumn Header="{x:Static props:Strings.SupplierView_Name}"  DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="{x:Static props:Strings.SupplierView_AccountNumber}" DisplayMemberBinding="{Binding AccountNumber}"/>
+                    <GridViewColumn Header="{x:Static props:Strings.SupplierView_CreditRating}"  DisplayMemberBinding="{Binding CreditRating, Converter={StaticResource creditRatingConv}}"/>
+                    <GridViewColumn Header="{x:Static props:Strings.SupplierView_PreferredSupplierFlag}"   DisplayMemberBinding="{Binding PreferredSupplierFlag, Converter={StaticResource boolConv}}"/>
+                    <GridViewColumn Header="{x:Static props:Strings.SupplierView_ActiveFlag}"  DisplayMemberBinding="{Binding ActiveFlag, Converter={StaticResource boolConv}}"/>
                 </GridView>
             </ListView.View>
         </ListView>

@@ -37,9 +37,6 @@ namespace HsrOrderApp.UI.WPF.ViewModels.Supplier
             }
         }
 
-        #region Additional Datasources
-
-        // TODO: Mit anderer statischer Ressource lösen?
         public IList<ProductDTO> Products
         {
             get

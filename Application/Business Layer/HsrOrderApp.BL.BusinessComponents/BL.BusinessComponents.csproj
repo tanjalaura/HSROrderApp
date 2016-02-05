@@ -107,6 +107,7 @@
     <Compile Include="ProductBusinessComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecurityBusinessComponent.cs" />
+    <Compile Include="SupplierBusinessComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

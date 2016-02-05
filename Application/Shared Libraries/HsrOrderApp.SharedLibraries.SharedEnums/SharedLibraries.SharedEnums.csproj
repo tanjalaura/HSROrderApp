@@ -80,6 +80,7 @@
     <Compile Include="ProductSearchType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleSearchType.cs" />
+    <Compile Include="SupplierSearchType.cs" />
     <Compile Include="UserSearchType.cs" />
   </ItemGroup>
   <ItemGroup>
